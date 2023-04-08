@@ -4,31 +4,37 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/perasaanku/style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
   
 <head>
-<title>Definisi bahagia aku</title>
+<title>Definisi Bahagia</title>
+<link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico">
 <meta name="description" content="HTML Replit Coding">
 
 </head>
 <style>
 :root {
---ukuran-teks: 14px;
---gaya-font: 'Poppins', sans-serif;
+--ukuran-teks: 16px;
+--gaya-font: 'Nunito Sans', sans-serif;
 }
 </style>
 <body>
-	
+  
    <!-- Ganti Audio di sini -->
-   <audio src="sc/My Audio.mp3" autoplay controls id="linkmp3" class="sembunyi"></audio>
+   <audio src="sc/bahagia.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur"><img src="" id="wallpaper"/></div>
    
    <div id='Content'>
+
+     <div id="ftAwal">
+       <!-- Stiker Pembuka -->
+       <img src="https://feeldreams.github.io/heart.png" id="ftoAwal"/>
+     </div>
 
      <div id="loveIn">
        <!-- Tombol LOVE --><label class='lovein'>❤️</label>
@@ -36,11 +42,18 @@
      <p id="ket">Sentuh LOVEnya!</p>
 
      <div class="kumpulan">
-     	<!-- Kumpulan Background -->
-     	<img src="sc/bg.jpg" id="bg1"/>
-       
+      <!-- Kumpulan Background -->
+      <img src="sc/bg3.jpg" id="wallpaper1"/>
+      <img src="sc/bg3.jpg" id="wallpaper2"/>
+         <img src="sc/bg3.jpg" id="wallpaper3"/>
+         <img src="sc/bg4.jpg" id="wallpaper4"/>
+         <img src="sc/bg4.jpg" id="wallpaper5"/>
+         <img src="sc/bg5.jpg" id="wallpaper6"/>
+         <img src="sc/bg5.jpg" id="wallpaper7"/>
+         <img src="sc/bg5.jpg" id="wallpaper8"/>
+         
          <!-- Foto/Stiker Akhir -->
-         <img src="https://feeldreams.github.io/ngumpet.gif" id="ftoAkhir"/>
+         <img src="https://feeldreams.github.io/bolehkah/heart.png" id="ftoAkhir"/>
      </div>
      
      <div><blockquote id='bq'>
@@ -55,37 +68,32 @@
    </div>
 
 <!-- Jangan Edit Bagian Ini --><script>
-  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); 
-  loveIn.style="display:none";ketdef=ket.innerHTML;ket.innerHTML="Memuat...";
-  
-  ftganti=0;fungsi=0;fungsiAwal=0;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart-broken"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart-broken"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); const inip = []; const iniwp = []; iden = 1;wallpaper.src=bg1.src;
-  
-  
-  inip[1] = "hai afifah febriani<br>menurut kamu bahagia itu seperti apa?";
-  inip[2] = "kalau menurut aku<br>bahagia aku di saat...";
-  inip[3] = "Disaat kita bersama,";
-  inip[4] = "Di waktu kita tertawa, menangis, merenung";
-  inip[5] = "oleh cinta";
-  
-  totalPesan = 5; //Input total pesan (slide) di sini ya!
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src); ftganti=0;fungsi=0;fungsiAwal=0;function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80,}); 
+  const inip = []; const iniwp = []; iden = 1; iniwp[1] = wallpaper1.src; wallpaper.src = iniwp[1]; iniwp[2] = wallpaper2.src; iniwp[3] = wallpaper3.src; iniwp[4] = wallpaper4.src; iniwp[5] = wallpaper5.src; iniwp[6] = wallpaper6.src; iniwp[7] = wallpaper7.src; iniwp[8] = wallpaper8.src;
 
-  function waktumuncul(){
-	  setTimeout(kalimatakhir,300); //1
-      setTimeout(kalimatakhir,3100); //2
-      setTimeout(kalimatakhir,5250); //3
-      setTimeout(kalimatakhir,7000); //4
-      setTimeout(kalimatakhir,9700); //5
-  }
-  
-  audio.addEventListener('progress', function() {
-    if(ket.innerHTML!=ketdef){
-        var loadedPercentage = this.buffered.end(0); 
-        loveIn.style="";
-        ket.innerHTML=ketdef;
-    }
-  });
+inip[1] = "hai afifah febriani";
+inip[2] = "menurut kamu bahagia itu seperti apa?";
+inip[3] = "kalau menurut aku";
+inip[4] = "bahagia aku di saat...";
+inip[5] = "Disaat kita bersama,";
+inip[6] = "Di waktu kita tertawa, menangis, merenung";
+inip[7] = "oleh cinta";
+
+
+totalPesan = 7; //Input total pesan (slide) di sini ya!
+
+function waktumuncul(){
+    setTimeout(kalimatakhir,5000);
+      setTimeout(kalimatakhir,6900);
+      setTimeout(kalimatakhir,10600);
+      setTimeout(kalimatakhir,13100);
+      setTimeout(kalimatakhir,15000);
+      setTimeout(kalimatakhir,19200);
+      setTimeout(kalimatakhir,25100);
+
+}
 </script>
-<script src="script.js"></script>
+<script src="https://feeldreams.github.io/bolehkah/script.js"></script>
 <!-- Sampai Sini -->
 </body>
 </html>
